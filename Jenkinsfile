@@ -11,10 +11,10 @@ pipeline{
         }
     }
     stages{
-        stage("run docker compose"){
+        stage("rune docker compose"){
             steps{
                 script{
-                    bat "docker-compose up"
+                    bat "docker-compose up -d --build"
                 }
             }
         }
